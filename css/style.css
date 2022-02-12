@@ -377,10 +377,7 @@ a {
 .form-input {
     width: 100%;
     height: 40px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 42px;
-    padding-right: 12px;
+    padding: 11px 12px 11px 42px;
     border: 1px solid var(--modal-input-color);
     border-radius: 4px;
     outline: none;
@@ -439,26 +436,26 @@ a {
     justify-content: right;
     align-items: center;
     width: 423px;
+}
 
+.checkbox-text {
     font-size: 14px;
     line-height: 1.71;
-    text-align: right;
     color: var(--primary-text-color);
 }
 
-.checkbox-label span {
-    padding-left: 2px;
+.checkbox-link {
     text-decoration: underline;
     color: var(--accent-color);
 }
 
-.checkbox {
+.checkbox-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     -appearance: none;
 }
 
-.check-icon {
+.checkbox-icon {
     position: absolute;
     top: 50%;
     left: 0;
@@ -467,11 +464,17 @@ a {
     margin-right: 7px;
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
+    background-color: transparent;
     fill: transparent;
+
+    transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
-.checkbox:checked + .check-icon {
-    border-color: transparent;
+.checkbox-input:checked + .checkbox-icon, 
+.checkbox-label:focus:checked + .checkbox-icon {
+    border: 2px solid transparent;
     background-color: var(--accent-color);
     fill: var(--white-color);
 }
