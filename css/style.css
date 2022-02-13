@@ -445,6 +445,7 @@ a {
 }
 
 .checkbox-link {
+    display: inline-block;
     text-decoration: underline;
     color: var(--accent-color);
 }
