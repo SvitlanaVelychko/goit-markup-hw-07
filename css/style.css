@@ -102,7 +102,7 @@ a {
     border-bottom: 1px solid var(--border-header-color);
 }
 
-.header .container {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -129,13 +129,17 @@ a {
     display: flex;
     margin-left: 93px;
     align-items: center;
-}
+} 
 
-.site-nav .item + .item {
+.site-nav__item {
     margin-left: 50px;
 }
 
-.site-nav .link {
+.site-nav__item:first-child {
+    margin-left: 0;
+}
+
+.site-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -149,16 +153,16 @@ a {
     transition: color 250ms var(--timing-function);
 }
 
-.site-nav .link:hover, .site-nav .link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
     color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.site-nav__link.current {
     position: relative;
     color: var(--accent-color);
 }
 
-.site-nav .link.current::after {
+.site-nav__link.current::after {
     content: '';
     position: absolute;
     left: 0;
@@ -176,11 +180,15 @@ a {
     align-items: center;
 }
 
-.header-list .item + .item {
+.header-item {
     margin-left: 50px;
 }
 
-.header-list .link-mail, .header-list .link-tel {
+.header-item:first-child {
+    margin-left: 0;
+}
+
+.header-link-mail, .header-link-tel {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -194,20 +202,20 @@ a {
     transition: color 250ms var(--timing-function);
 }
 
-.header-list .link-mail:hover, .header-list .link-mail:focus {
+.header-link-mail:hover, .header-link-mail:focus {
     color: var(--accent-color);
 }
 
-.mail-icon {
+.header-icon-mail {
     margin-right: 10px;
     fill: currentColor;
 }
 
-.header-list .link-tel:hover, .header-list .link-tel:focus {
+.header-link-tel:hover, .header-link-tel:focus {
     color: var(--accent-color);
 }
 
-.tel-icon {
+.header-icon-tel {
     margin-right: 10px;
     fill: currentColor;
 }
@@ -231,7 +239,7 @@ a {
     text-align: center;
 }
 
-.hero-title {
+.hero__title {
     width: 696px;
     margin-right: auto;
     margin-left: auto;
@@ -285,13 +293,13 @@ a {
     visibility 250ms var(--timing-function);
 }
 
-.backdrop.is-hidden {
+.backdrop--is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop--is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.5);
 
 }

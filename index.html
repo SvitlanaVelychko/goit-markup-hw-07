@@ -17,27 +17,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="header-container container">
             <nav class="header-nav">
                 <a href="" lang="en" class="logo-web">Web<span lang="en" class="logo-studio">Studio</span>
                 </a>
                 <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="item"><a href="" class="link">Контакты</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link current">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header-list list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="link-mail">
-                    <svg class="mail-icon" width="16" height="12">
+                <li class="header-item">
+                    <a href="mailto:info@devstudio.com" class="header-link-mail">
+                    <svg class="header-icon-mail" width="16" height="12">
                         <use href="./images/icons.svg#mail"></use>
                     </svg> 
                     info@devstudio.com</a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="link-tel">
-                    <svg class="tel-icon" width="10" height="16">
+                <li class="header-item">
+                    <a href="tel:+380961111111" class="header-link-tel">
+                    <svg class="header-icon-tel" width="10" height="16">
                         <use href="./images/icons.svg#tel"></use>
                     </svg>
                     +38 096 111 11 11</a>
@@ -49,9 +49,9 @@
         <!--Герой-->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open>Заказать услугу</button>
-                <div class="backdrop is-hidden" data-modal>
+                <div class="backdrop--is-hidden" data-modal>
                     <div class="modal">
                         <button class="close-button" data-modal-close>
                             <svg class="close-icon" width="11" height="11">
