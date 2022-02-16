@@ -7,12 +7,12 @@
     margin-left: calc(-1 * var(--card-gap));
 }
 
-.feature__item {
+.feature-list__item {
     flex-basis: calc(100% / 4 - var(--card-gap));
     margin-left: var(--card-gap);
 }
 
-.feature__icon {
+.feature-list__icon {
     display: flex;
     width: 100%;
     height: 120px;
@@ -22,7 +22,7 @@
     background-color: var(--secondary-background-color);
 }
 
-.feature__title {
+.feature-list__title {
     margin-bottom: 10px;
 
     color: var(--title-text-color);
@@ -31,7 +31,7 @@
     text-transform: uppercase;
 }
 
-.feature__text {
+.feature-list__text {
     font-size: 14px;
     line-height: 1.71;
 }

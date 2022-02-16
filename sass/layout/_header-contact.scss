@@ -1,14 +1,14 @@
-.header-list {
+.header-contact {
     display: flex;
     margin-left: auto;
     align-items: center;
 }
 
-.header__item:not(:first-child) {
+.header-contact__item:not(:first-child) {
     margin-left: 50px;
 }
 
-.header__link {
+.header-contact__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -26,7 +26,7 @@
     }
 }
 
-.header__icon {
+.header-contact__icon {
     margin-right: 10px;
     fill: currentColor;
 }
