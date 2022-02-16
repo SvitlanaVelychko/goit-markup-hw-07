@@ -1,0 +1,29 @@
+.about-list {
+    display: flex;
+    margin-left: -1 * 30px;
+}
+
+.about-list__item {
+    position: relative;
+    flex-basis: (1200px / 3) - 30px;
+    margin-left: var(--card-gap);
+    z-index: -1;
+}
+
+.about-list__text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--background-overlay-about);
+    color: var(--white-color);
+}
