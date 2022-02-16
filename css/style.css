@@ -70,6 +70,7 @@ body {
 }
 
 a {
+    display: block;
     text-decoration: none;
 }
 
@@ -113,6 +114,7 @@ a {
 }
 
 .logo {
+
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: 700;
@@ -699,16 +701,10 @@ a {
 
 .footer__logo {
     margin-bottom: 20px;
-    color: var(--accent-color);
-    font-family: Raleway;
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
 }
 
-.footer-logo-studio {
+.footer__logo-studio {
     color: var(--white-color);
 }
 
