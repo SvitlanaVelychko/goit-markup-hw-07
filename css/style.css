@@ -355,7 +355,7 @@ a {
     margin-bottom: 10px;
 }
 
-.form-field--comment {
+.form-field-comment {
     margin-bottom: 20px;
 }
 
@@ -421,7 +421,7 @@ a {
     border: 1px solid var(--accent-color);
 }
 
-.form-checkbox {
+.checkbox {
     position: relative;
     display: inline-flex;
     justify-content: right;
@@ -465,7 +465,7 @@ a {
 }
 
 .checkbox__input:checked + .checkbox__icon, 
-.form-checkbox:focus:checked + .checkbox__icon {
+.checkbox:focus:checked + .checkbox__icon {
     border: 2px solid transparent;
     background-color: var(--accent-color);
     fill: var(--white-color);
@@ -799,7 +799,7 @@ a {
     background-color: var(--background-footer-color);
 }
 
-.email__button {
+.email-button {
     padding: 0;
     display: inline-flex;
     align-items: center;
