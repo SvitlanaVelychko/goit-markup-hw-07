@@ -1,5 +1,5 @@
 .logo {
-    @include font(normal, 700, 26px, 1.19, 0.03em);
+    @include font(null, 700, 26px, 1.19, 0.03em);
     font-family: Raleway;
     color: var(--accent-color);
 }

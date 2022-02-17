@@ -1,5 +1,5 @@
 .site-nav {
-    @include centeredFlex;
+    @include centeredFlex(flex, center, null);
     margin-left: 93px;
 } 
 
@@ -22,11 +22,12 @@
     }
 }
 
-.site-nav__link--current {
+.site-nav__link.current {
     position: relative;
     color: var(--accent-color);
+}
 
-    &::after {
+.site-nav__link.current::after {
         content: '';
         position: absolute;
         left: 0;
@@ -37,4 +38,3 @@
         border-radius: 2px;
         background-color: var(--accent-color);
     }
-}

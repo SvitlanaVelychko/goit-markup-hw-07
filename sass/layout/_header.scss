@@ -3,9 +3,9 @@
 }
 
 .header-container {
-    @include centeredFlex;
+    @include centeredFlex(flex,center, null);
 }
 
 .header-nav {
-    @include centeredFlex;
+    @include centeredFlex(flex,center, null);
 }
