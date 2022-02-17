@@ -8,6 +8,10 @@
     letter-spacing: 0.03em;
 }
 
-.logo-studio {
+.logo__studio {
     color: var(--black-color);
+
+    &--inverse {
+        color: var(--white-color);
+    }
 }

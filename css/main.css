@@ -112,8 +112,12 @@ button {
   letter-spacing: 0.03em;
 }
 
-.logo-studio {
+.logo__studio {
   color: var(--black-color);
+}
+
+.logo__studio--inverse {
+  color: var(--white-color);
 }
 
 .site-nav {
@@ -618,10 +622,6 @@ button {
 
 .address-block__logo {
   margin-bottom: 20px;
-}
-
-.address-block__logo-studio {
-  color: var(--white-color);
 }
 
 .address-list {
