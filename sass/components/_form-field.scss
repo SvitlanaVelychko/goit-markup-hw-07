@@ -1,9 +1,7 @@
 .form-field {
     display: block;
     padding: 0;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(null, null, 12px, 1.17, 0.01em);
     text-align: left;
     color: var(--primary-text-color);
 
@@ -72,8 +70,6 @@
 }
 
 .form__textarea::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(null, null, 12px, 1.17, 0.01em);
     color: rgba(117, 117, 117, 0.5);
 }

@@ -6,8 +6,7 @@
 }
 
 .footer__container {
-    display: flex;
-    align-items: baseline;
+    @include centeredFlex(flex, baseline, null);
 }
 
 .address-block {
@@ -29,9 +28,7 @@
 .address-list__link {
     display: block;
     color: var(--white-color);
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(normal, null, 14px, 1.71, null);
 
     transition: color 250ms var(--timing-function);
 

@@ -1,14 +1,11 @@
 .checkbox {
     position: relative;
-    display: inline-flex;
-    justify-content: right;
-    align-items: center;
+    @include centeredFlex(inline-flex, center, right);
     width: 423px;
 }
 
 .checkbox__text {
-    font-size: 14px;
-    line-height: 1.71;
+    @include font(null, null, 14px, 1.71, null);
     color: var(--primary-text-color);
 }
 

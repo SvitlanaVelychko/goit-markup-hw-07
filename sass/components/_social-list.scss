@@ -1,6 +1,5 @@
 .social-list {
-    display: flex;
-    justify-content: center;
+    @include centeredFlex;
 }
 
 .social-list__item:not(:first-child) {
@@ -8,11 +7,9 @@
 }
 
 .social-list__link {
-    display: flex;
+    @include centeredFlex;
     width: 44px;
     height: 44px;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
     
     color: var(--icon-color);

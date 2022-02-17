@@ -47,6 +47,7 @@
     position: absolute;
     top: 8px;
     right: 8px;
+    cursor: pointer;
 
     width: 30px;
     height: 30px;
@@ -68,11 +69,9 @@
 
 .modal-form__title {
     margin-bottom: 12px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(null, 700, 20px, 1.15, null);
     text-align: center;
-    color: jvar(--title-text-color);
+    color: var(--title-text-color);
 }
 
 .modal-form__button {

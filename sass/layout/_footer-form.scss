@@ -5,9 +5,7 @@
 .footer-form__text {
     margin-bottom: 20px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(null, 700, 14px, 1.14, null);
     text-transform: uppercase;
     color: var(--white-color);
 }
@@ -28,17 +26,14 @@
     border-radius: 4px;
     outline: none;
 
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(null, null, 16px, 1.25, null);
     color: var(--text-adress-color);
     background-color: var(--background-footer-color);
 }
 
-.email-form-btn {
+.email-form__btn {
     padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex(inline-flex);
 }
 
 .email-form__icon {

@@ -1,6 +1,5 @@
 .filters {
-    display: flex;
-    justify-content: center;
+    @include centeredFlex;
     margin-bottom: 50px;
 }
 
@@ -19,11 +18,8 @@
     background-color: var(--secondary-background-color);
     color: var(--title-text-color);
     font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
+    @include font(null, 500, 16px, 1.62, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
 
     transition: background-color 250ms var(--timing-function),
     color 250ms var(--timing-function),
